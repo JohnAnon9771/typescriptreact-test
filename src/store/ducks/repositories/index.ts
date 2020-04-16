@@ -19,7 +19,7 @@ export const reducer: Reducer<RepositoriesState> = (
         ...state,
         loading: false,
         error: false,
-        data: action.payload.data,
+        data: action.payload,
       };
     case RepositoriesTypes.LOAD_FAILURE:
       return {
